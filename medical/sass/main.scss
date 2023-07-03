@@ -1,0 +1,38 @@
+$enable-gradients: true;
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/variables-dark";
+// Create background color classes from the "$grays" color 
+// map
+
+
+
+$indigos: ( "100": $indigo-100, "200": $indigo-200, "300": $indigo-300, "400": $indigo-400, "500": $indigo-500, "600": $indigo-600, "700": $indigo-700, "800": $indigo-800, "900": $indigo-900) !default;
+
+
+@each $key, $value in $indigos {
+    .bg-indigo-#{$key}{
+          background-color: $value !important;
+    }
+  
+    .text-indigo-#{$key}{
+      color: $value !important;
+    }
+  }
+
+// Required
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+// Optional Bootstrap CSS
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+// The long list of imports have been reduced here.
+// Helpers
+@import "../bootstrap/scss/helpers";
+// Utilities
+@import "../bootstrap/scss/utilities";
+// Utilities API
+@import "../bootstrap/scss/utilities/api";

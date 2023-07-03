@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Medical service</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+       
+    <!-- bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+       
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/custom_bootstrap.css">
+
+    <style>
+      body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+          margin: 0;
+          padding: 0;
+          border: 0;
+      }
+      
+
+      body{
+        overflow-x: hidden;
+      }
+
+      
+
+      body{
+        font-family: 'poppins';
+        font-weight: bolder;
+      }
+      nav{
+        font-size: 1em;
+      }
+
+      /* These are the KEY styles - you can add them directly to any object you want in your project */
+      .fancy-border-radius {
+        border-radius: 47% 53% 30% 70% / 70% 70% 30% 30%;
+
+        /* These are ADDITIONAL styles - add them if you want an object exactly like in the demo above */
+        width: 400px;
+        height: 400px;
+        background: #ad5389;
+        background-color: -webkit-linear-gradient(to right,#3c1053,#ad5389);
+        background-color: linear-gradient(to right,#3c1053,#ad5389);
+      }
+
+      .bg-login{
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        /* object-fit: cover; */
+        
+        z-index: -1;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="">
+        <div class="row gx-3 mt-5 justify-content-center">
+            <div class="col-md-3 card py-5  px-5 bg-indigo-indigo-600">
+                <h5 class="mb-3 fw-bold text-center text-light" style="font-family: 'poppins';">Log in</h5>
+
+                <div class="mb-3">
+                  <label for="username" class="form-label text-light" style="font-size: small;">Username*</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+    
+                <div class="mb-3">
+                  <label for="password" class="form-label text-light" style="font-size: small;">Password*</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+    
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="remMe" checked>
+                    <label class="form-check-label text-light" for="remMe" style="font-weight: 500; font-size: small;">
+                      Remember me
+                    </label>
+                </div>
+                
+                <button type="button" id="loginBtn" class="btn btn-warning fw-bold  rounded text-dark bolder-0 mb-5"
+                    style="font-size: 0.8em;" >LOGIN
+                </button>
+                
+
+                <div>
+                    <p class="d-inline"  style="font-size: small;"><a href="" class="text-light ">Forgot password?</a> </p>
+                    <p class="d-inline" style="font-size: small;"><a href="signup.html" class="text-light text-end ms-5 ps-3">Sign Up!
+                    </a></p>
+                </div>
+                
+                 
+            </div>
+
+            <div class="col-md-3 bg-warning text-start card text-light "> 
+              <a class="navbar-brand text-center mb-2 mt-5 text-indigo-indigo-600 fs-4" style="border: 4px solid black;" href="#"><i class="fas fa-hand-holding-medical "></i> Health.</a>
+              <h3 class="text-center text-dark" style="font-family: 'Roboto Slab', serif; font-weight: bolder;">Trusted for our expertise. <br> Chosen for our care.</h3>
+              <img src="images/login.png" alt="" class="img-fluid pt-5 " style="object-fit: cover;">
+
+            </div>
+        </div>
+        <img src="images/bg.jpg" alt="" class="img-fluid bg-login">
+    </div>
+
+
+
+  
+
+    <!-- MDB -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="scripts/medic.js"></script>
+  </body>
+</html>

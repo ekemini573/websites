@@ -1,0 +1,92 @@
+/* style rule for herp image and header */
+
+.hero{
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+    /* object-fit: cover; */
+    filter: brightness(0.3);
+    z-index: -1;
+}
+
+.about-welcome{
+    position: absolute;
+    top: 10%;
+    z-index: 3;
+}
+
+.about-welcome{
+   color: white;
+}
+
+
+
+.about-hero{
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vh;
+    filter: brightness(0.3);
+}
+
+header, main{
+    overflow-x: hidden;
+}
+
+
+.welcome{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin: auto;
+    z-index: 3;
+}
+
+.welcome p{
+    font-size: 1em;
+    font-family: 'Roboto Slab', serif;
+    width: 70%;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.welcome img{
+    border: none;
+    background-image: linear-gradient(to right, rgba(0,0,0), rgba(24,24,24),  rgba(0,0,0));
+    
+}
+p, table{
+    font-family: 'Roboto Slab', serif;
+}
+
+.contact{
+    font-family: 'Roboto Slab', serif;
+}
+.contact h2{
+    font-weight: 400;
+}
+
+
+.contact h4{
+    font-weight: 370;
+}
+
+h1{
+    font-family: 'Francois One', sans-serif;
+}
+
+.welcome h1{
+    font-family: 'Francois One', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 770px), print{
+    .welcome{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        z-index: 3;
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mdb-standard-app",
+  "version": "6.3.1",
+  "homepage": "https://mdbootstrap.com/docs/standard/",
+  "license": "MIT",
+  "description": "MDB5\r Version: FREE 6.3.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

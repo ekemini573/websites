@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Medical service</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Francois+One&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+       
+    <!-- bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+       
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/custom_bootstrap.css">
+
+    <style>
+      body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+          margin: 0;
+          padding: 0;
+          border: 0;
+      }
+      
+
+      body{
+        overflow-x: hidden;
+      }
+
+      .nav-custom{
+         /* fallback for old browsers */
+         background: rgba(100, 149, 237,0.5);
+      
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom left, rgba(106, 90, 205,0.4), rgba(204, 255, 255,0.2));
+      
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom left, rgba(204, 255, 255,0.2),  rgba(204, 255, 255,0.2))
+      }
+
+      .background-custom {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+       
+      
+        /* fallback for old browsers */
+        background: rgba(100, 149, 237,0.5);
+      
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom left, rgba(106, 90, 205,0.4), rgba(204, 255, 255,0.2));
+      
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom left, rgba(106, 90, 205,0.4), rgba(204, 255, 255,0.2))
+      }
+
+      .background-custom-about {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+       
+      
+        /* fallback for old browsers */
+        background: rgba(100, 149, 237,0.5);
+      
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, rgba(106, 90, 205,0.2), rgba(204, 255, 255,0.2));
+      
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, rgba(106, 90, 205,0.2), rgba(204, 255, 255,0.2))
+      }
+
+      body{
+        font-family: 'poppins';
+        font-weight: bolder;
+      }
+      nav{
+        font-size: 1em;
+      }
+
+      /* These are the KEY styles - you can add them directly to any object you want in your project */
+      .fancy-border-radius {
+        border-radius: 47% 53% 30% 70% / 70% 70% 30% 30%;
+
+        /* These are ADDITIONAL styles - add them if you want an object exactly like in the demo above */
+        width: 400px;
+        height: 400px;
+        background: #ad5389;
+        background-color: -webkit-linear-gradient(to right,#3c1053,#ad5389);
+        background-color: linear-gradient(to right,#3c1053,#ad5389);
+      }
+
+      nav li a{
+
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+
+      }
+
+      nav li a:hover{
+        color: indigo;
+      }
+
+      #contacts p, a{ 
+        font-size: small;
+        text-decoration: none;
+      }
+
+      
+      
+      .doc .card-wrapper {
+          margin-bottom: 30px;
+      }
+      .doc .card-image .card .card-img-wrapper {
+          height: 100%;
+      }
+      .doc .card-image .card .card-body {
+          display: none;
+      }
+      .doc .card-image-title-description .card .card-img-wrapper {
+          max-height: 160px;
+        }
+      .doc  .card-image-title-description .card {
+          position: relative;
+          min-height: 300px;
+        }
+      .doc .card-image-title-description .card .card-body {
+          height: auto;
+          position: relative;
+          top: 0;
+          margin-bottom: -70px;
+        }
+      .doc .card-image-title-description .card:hover .card-body {
+          top: -70px;
+        }
+      .doc .card-image-title-description .card .card-body .card-title {
+          margin-bottom: .75rem;
+        }
+      .doc .card {
+          display: inline-block;
+          position: relative;
+          overflow: hidden;
+          min-height: 400px;
+          height: 100%;
+        }
+      .doc .card:hover {
+          box-shadow: 8px 12px 31px -10px #ab98ab;
+        }
+      .doc .card-img-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50%;
+          overflow: hidden;
+        }
+      .doc .card-img-wrapper img {
+          transition: 1.5s ease;
+        }
+      .doc .card:hover .card-img-wrapper img {
+          transform: scale(1.15);
+        }
+      .doc .card-body .card-title {
+          margin-bottom: calc(50% + 20px);
+          transition: 1.5s ease;
+        }
+      .doc .card:hover .card-body .card-title {
+          margin-bottom: .75rem;
+        }
+
+      .doc .card-body {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 50%;
+          background-color: #fff;
+          transition: 1.5s ease;
+        }
+      .doc .card-content {
+          left: 0;
+          right: 0;
+          overflow: hidden;
+          width: 100%;
+          height: auto;
+          transition: 1.5s ease;
+        }
+      .doc .card:hover .card-body {
+          height: 80%;
+        }
+      .doc .card:hover .card-content {
+          bottom: 0;
+        }
+
+      .bg-home{
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        
+        z-index: -1;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Start your project here-->
+
+    <!-- navigation -->
+    <div class="">
+      <nav class="navbar fixed-top navbar-expand-lg nav-custom bg-body-tertiary mb-3 shadow-0" >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 text-indigo-indigo-600 fs-4" href="#"><i class="fas fa-hand-holding-medical "></i> Health.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mx-5">
+              <li class="nav-item mx-2">
+                <a class="nav-link active w-100  " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link w-100" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link w-100" href="services.html">Services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link w-100" href="doctors.html">Doctors</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link w-100 " href="contact.html">Contact</a>
+              </li>  
+              <li class="nav-item ">
+                <a class="nav-link " href="login.html">Login</a>
+              </li>
+            </ul>
+
+            <a href="signup.html" role="button" class="btn text-light btn-md bg-indigo-indigo-600 px-3 rounded-pill " style="font-size: 0.9em; font-weight: bold;">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+
+      
+      <!-- doctors page-->
+      <div class="background-custom-about">
+        <div class="container doc " id="Doctors">
+          <h3 class="text-indigo-indigo-600 fw-bold ms-5 text-center" style="padding-top: 3em;">Our Specialist Doctors</h3>
+          <p class="text-muted text-center pb-5">Meet our experienced Specialist who are always ready attend to your medical needs</p>
+          
+        
+          <div class="row">
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="images/doc1.webp" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dr Philip Effiong <span class="text-indigo-indigo-500" style="font-size: x-small;">(physiatrist)</span></h5>
+                  <div class="card-content">
+                    <p class="card-text">Dr Philip Effiong is a Nigerian medical doctor, physiatrist, and founder of the school of individual 
+                      psychology.His emphasis on the importance of feelings of belonging, 
+                      family constellation and birth order set him apart from 
+                      Freud and other members of the medical Circle.</p>
+                    <a href="#contacts" class="btn btn-primary">Book appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="images/doc3.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"> Dr Adewale Chalse <span class="text-indigo-indigo-500" style="font-size: x-small;">(Laboratory scientist)</span></h5>
+                  <p class="card-text">Dr Adewale Chalse is a Driven, hardworking Medical Laboratory Scientist with ASCP 
+                    certification and 15 years experience. Reliable and focuses on quality completion of all lab procedures.</p>
+                  <a href="##contacts" class="btn btn-primary">Book appointment</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="images/doc2.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dr Vivian Godwin <span class="text-indigo-indigo-500" style="font-size: x-small;">(nerosurgeon)</span></h5>
+                  <p class="card-text">Dr. Vivain is a expert in nerosurgeon medicine with over 17 years experience, 
+                    with serveral certificate and holds serveral degrees from several universities around the world.</p>
+                  <a href="##contacts" class="btn btn-primary">Book appointment</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="images/doc5.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dr Ekom Chigozie <span class="text-indigo-indigo-500" style="font-size: x-small;">(Oncologists)</span></h5>
+                  <p class="card-text">Dr Ekom is a expert in oncology medicine with over 17 years experience, 
+                    with serveral certificate and holds serveral degrees from several universities around the world.</p>
+                  <a href="##contacts" class="btn btn-primary">Book appointment</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="images/doc6.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dr Ebeneza Sethe <span class="text-indigo-indigo-500" style="font-size: x-small;">(Radiologists)</span></h5>
+                  <p class="card-text">
+                    Dr Ebeneza is a expert in oncology medicine with over 17 years experience, 
+                    with serveral certificate and holds serveral degrees from several universities around the world.</p>
+                  <a href="#contacts" class="btn btn-primary">Book appointment</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img class="card-img-top" src="images/doc7.webp" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dr Chris Ogar <span class="text-indigo-indigo-500" style="font-size: x-small;">(Psychiatrists)</span></h5>
+                  <p class="card-text">Dr Chris is a expert in oncology medicine with over 17 years experience, 
+                    with serveral certificate and holds serveral degrees from several universities around the world.</p>
+                  <a href="#contacts" class="btn btn-primary">Book appointment</a>
+                </div>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <!-- MDB -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
